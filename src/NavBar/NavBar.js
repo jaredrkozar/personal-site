@@ -25,7 +25,7 @@ function NavBar() {
             <div class="rounded-md relative bg-transparent hover:bg-lightBlue dark:hover:bg-slate-900 hover:text-lg stroke-1200 stroke-2 hover:stroke-3 dark:hover:stroke-3">
                     <div class="transform transition duration-500 hover:scale-110 flex items-center p-4 gap-2">
                         <LinkedInIcon/>
-                        <h1 class="invisible md:visible lg:visible">LinkedIn</h1>
+                        <h1 class="hidden md:block lg:block">LinkedIn</h1>
                     </div>
                 </div>
 
@@ -33,21 +33,21 @@ function NavBar() {
                 <div class="rounded-md relative align-middle bg-transparent hover:bg-lightBlue dark:hover:bg-slate-900 hover:text-lg stroke-2 hover:stroke-3 dark:hover:stroke-3">
                     <div class="transform transition align-middle duration-500 hover:scale-110 flex items-center py-2 px-3 gap-2">
                         <GithubIcon/>
-                        <h1 class="invisible md:visible lg:visible">GitHub</h1>
+                        <h1 class="hidden md:block lg:block">GitHub</h1>
                     </div>
                 </div>
 
                 <div class=" rounded-md relative bg-transparent hover:bg-lightBlue dark:hover:bg-slate-900 hover:text-lg stroke-2 hover:stroke-3 dark:hover:stroke-3">
                     <div class="align-middle transform transition duration-500 hover:scale-110 flex items-center py-1 px-2 gap-2">
                         <ResumeIcon/>
-                        <h1 class="invisible md:visible lg:visible">Resume</h1>
+                        <h1 class="hidden md:block lg:block">Resume</h1>
                     </div>
                 </div>
 
                 <div class="align-middle rounded-md relative bg-transparent hover:bg-lightBlue dark:hover:bg-slate-900 hover:text-lg stroke-2 hover:stroke-3 dark:hover:stroke-3">
                     <div class="transform transition align-middle duration-500 hover:scale-110 flex items-center py-2 px-2 gap-2">
                        <EmailIcon/>
-                        <h1 class="invisible md:visible lg:visible">Email</h1>
+                        <h1 class="hidden md:block lg:block">Email</h1>
                     </div>
                 </div>
              </div>
