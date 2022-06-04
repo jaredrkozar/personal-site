@@ -3,10 +3,10 @@ import codeImg from  "../Images/code.jpeg";
 
 function Header() {
   return (
-<div class="relative w-screen h-80 overflow-hidden">
+<div class="flex auto py-16 flex-col space-y-10">
  
-  <div class="absolute w-full py-2.5 top-10 inset-x-0 text-6xl font-bold dark:text-white left-10">Hi, I'm Jared Kozar.</div>
-  <div class="absolute w-full bottom-3 text-4xl dark:text-white left-10 mr-[83px]">I am a junior majoring in computer science at the University of Hartford. I enjoy developing apps that help users, especially those who are visually impaired, improve their productivity on their iPhone, iPad, Mac, and Apple Watch. </div>
+  <div class="relative text-6xl font-bold dark:text-white">Hi, I'm Jared Kozar.</div>
+  <div class="relative text-4xl dark:text-white mr-36">I am a junior majoring in computer science at the University of Hartford. I enjoy developing apps that help users, especially those who are visually impaired, improve their productivity on their iPhone, iPad, Mac, and Apple Watch. </div>
 
 
 </div>

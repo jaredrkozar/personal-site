@@ -5,7 +5,7 @@ import PersonIcon from  "../Images/personIcon.png";
 
 function AboutMe() {
   return (
-    <div className="relative mr-5 ml-5">
+    <div className="relative">
         <h2 className="text-4xl font-bold"> About Me</h2>
 
         <h3 className="text-2xl font-semibold py-2"> Here's some more info about me.</h3>

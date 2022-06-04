@@ -6,7 +6,7 @@ import CalculatorIcon from  "../Images/CalculatorIcon.png";
 
 function iOSApps() {
   return (
-    <div className="relative mr-5 ml-5">
+    <div className="relative mr-5">
         <h2 className="text-4xl font-bold"> iOS Apps</h2>
 
         <h3 className="text-2xl font-semibold py-2"> Here are some of the iOS, iPadOS, Mac, and Apple Watch apps I've worked on:</h3>

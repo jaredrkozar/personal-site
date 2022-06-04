@@ -9,7 +9,7 @@ function App() {
   return (
     <div class="flex flex-col min-h-screen bg-white dark:bg-slate-800 dark:text-white">
      <NavBar/>
-     <div class="space-y-20">
+     <div class="space-y-20 relative left-10 mr-10">
      <Header/>
      <AboutMe/>
      <IOSApps/>
