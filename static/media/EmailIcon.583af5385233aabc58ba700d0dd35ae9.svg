@@ -1,0 +1,7 @@
+          <svg width="30px" height="50px" viewBox="0 -5 50 30"  fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" class="text-black dark:text-sky-100 w-12 h-12 mb-3 inline-block">
+    <g id="email" stroke="none" fill="none" fill-rule="evenodd">
+        <rect id="Rectangle" stroke="currentColor" x="1.5" y="1.5" width="47" height="27" rx="6"></rect>
+        <path d="M4.18326693,4.99801621 L22.4113922,14.6803201 C23.4071274,15.267442 24.117956,15.5367229 25.160718,15.4754296 C25.8327255,15.4359292 26.8596711,15.2591363 27.4653484,14.9416429 L46.1832669,4.48396325" id="Line" stroke="currentColor" stroke-linecap="square"></path>
+    </g>
+</svg>
+
