@@ -1,27 +1,28 @@
 {
   "files": {
-    "main.css": "//jaredrkozar.com/static/css/main.ad971383.css",
-    "main.js": "//jaredrkozar.com/static/js/main.f60c94da.js",
-    "static/js/787.5809834d.chunk.js": "//jaredrkozar.com/static/js/787.5809834d.chunk.js",
-    "static/media/code.jpeg": "//jaredrkozar.com/static/media/code.8f83cd479dd070dff921.jpeg",
-    "static/media/imageResizerIcon.png": "//jaredrkozar.com/static/media/imageResizerIcon.4a4c2ee3d6e826b84a56.png",
-    "static/media/JavaIcon.jpg": "//jaredrkozar.com/static/media/JavaIcon.2e87f0bd41b9b67fec1b.jpg",
-    "static/media/CalculatorIcon.png": "//jaredrkozar.com/static/media/CalculatorIcon.d229bc31eb8e497a4bc8.png",
-    "static/media/SwiftIcon.jpg": "//jaredrkozar.com/static/media/SwiftIcon.25e8e36a0c62d83facd8.jpg",
-    "static/media/VisionTextIcon.png": "//jaredrkozar.com/static/media/VisionTextIcon.30419cd2d389e2f200c3.png",
-    "static/media/personIcon.png": "//jaredrkozar.com/static/media/personIcon.aa71910b891eca7ddebb.png",
-    "static/media/GithubIcon.svg": "//jaredrkozar.com/static/media/GithubIcon.56e6bbb98792960131261b26a59dc777.svg",
-    "static/media/LinkedInIcon.svg": "//jaredrkozar.com/static/media/LinkedInIcon.0dc563e848e2b576cace25e68b0c3cba.svg",
-    "static/media/JKIcon.svg": "//jaredrkozar.com/static/media/JKIcon.bacc68eb9e8aefea4cd91ba2a2109d0d.svg",
-    "static/media/resumeIcon.svg": "//jaredrkozar.com/static/media/resumeIcon.6edb31d6d8554fb6c76dd52744cd7e9e.svg",
-    "index.html": "//jaredrkozar.com/index.html",
-    "static/media/EmailIcon.svg": "//jaredrkozar.com/static/media/EmailIcon.583af5385233aabc58ba700d0dd35ae9.svg",
-    "main.ad971383.css.map": "//jaredrkozar.com/static/css/main.ad971383.css.map",
-    "main.f60c94da.js.map": "//jaredrkozar.com/static/js/main.f60c94da.js.map",
-    "787.5809834d.chunk.js.map": "//jaredrkozar.com/static/js/787.5809834d.chunk.js.map"
+    "main.css": "/static/css/main.e165ea95.css",
+    "main.js": "/static/js/main.0ad79b6d.js",
+    "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/code.jpeg": "/static/media/code.8f83cd479dd070dff921.jpeg",
+    "static/media/imageResizerIcon.png": "/static/media/imageResizerIcon.4a4c2ee3d6e826b84a56.png",
+    "static/media/JavaIcon.jpg": "/static/media/JavaIcon.2e87f0bd41b9b67fec1b.jpg",
+    "static/media/CalculatorIcon.png": "/static/media/CalculatorIcon.d229bc31eb8e497a4bc8.png",
+    "static/media/clojureIcon.png": "/static/media/clojureIcon.2f7b59a5d1dee6709f32.png",
+    "static/media/SwiftIcon.jpg": "/static/media/SwiftIcon.25e8e36a0c62d83facd8.jpg",
+    "static/media/VisionTextIcon.png": "/static/media/VisionTextIcon.30419cd2d389e2f200c3.png",
+    "static/media/personIcon.png": "/static/media/personIcon.aa71910b891eca7ddebb.png",
+    "static/media/GithubIcon.svg": "/static/media/GithubIcon.56e6bbb98792960131261b26a59dc777.svg",
+    "static/media/LinkedInIcon.svg": "/static/media/LinkedInIcon.0dc563e848e2b576cace25e68b0c3cba.svg",
+    "static/media/JKIcon.svg": "/static/media/JKIcon.bacc68eb9e8aefea4cd91ba2a2109d0d.svg",
+    "static/media/resumeIcon.svg": "/static/media/resumeIcon.6edb31d6d8554fb6c76dd52744cd7e9e.svg",
+    "static/media/EmailIcon.svg": "/static/media/EmailIcon.583af5385233aabc58ba700d0dd35ae9.svg",
+    "index.html": "/index.html",
+    "main.e165ea95.css.map": "/static/css/main.e165ea95.css.map",
+    "main.0ad79b6d.js.map": "/static/js/main.0ad79b6d.js.map",
+    "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.ad971383.css",
-    "static/js/main.f60c94da.js"
+    "static/css/main.e165ea95.css",
+    "static/js/main.0ad79b6d.js"
   ]
 }
