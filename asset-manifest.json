@@ -1,8 +1,9 @@
 {
   "files": {
-    "main.css": "/static/css/main.006be268.css",
-    "main.js": "/static/js/main.2a776760.js",
+    "main.css": "/static/css/main.7106940f.css",
+    "main.js": "/static/js/main.38cadc7f.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
+    "static/media/Memoji.png": "/static/media/Memoji.ea0c0b27b42899241e57.png",
     "static/media/code.jpeg": "/static/media/code.8f83cd479dd070dff921.jpeg",
     "static/media/imageResizerIcon.png": "/static/media/imageResizerIcon.4a4c2ee3d6e826b84a56.png",
     "static/media/JavaIcon.jpg": "/static/media/JavaIcon.2e87f0bd41b9b67fec1b.jpg",
@@ -13,16 +14,15 @@
     "static/media/personIcon.png": "/static/media/personIcon.aa71910b891eca7ddebb.png",
     "static/media/GithubIcon.svg": "/static/media/GithubIcon.56e6bbb98792960131261b26a59dc777.svg",
     "static/media/LinkedInIcon.svg": "/static/media/LinkedInIcon.0dc563e848e2b576cace25e68b0c3cba.svg",
-    "static/media/JKIcon.svg": "/static/media/JKIcon.bacc68eb9e8aefea4cd91ba2a2109d0d.svg",
     "static/media/resumeIcon.svg": "/static/media/resumeIcon.6edb31d6d8554fb6c76dd52744cd7e9e.svg",
     "static/media/EmailIcon.svg": "/static/media/EmailIcon.583af5385233aabc58ba700d0dd35ae9.svg",
     "index.html": "/index.html",
-    "main.006be268.css.map": "/static/css/main.006be268.css.map",
-    "main.2a776760.js.map": "/static/js/main.2a776760.js.map",
+    "main.7106940f.css.map": "/static/css/main.7106940f.css.map",
+    "main.38cadc7f.js.map": "/static/js/main.38cadc7f.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.006be268.css",
-    "static/js/main.2a776760.js"
+    "static/css/main.7106940f.css",
+    "static/js/main.38cadc7f.js"
   ]
 }
