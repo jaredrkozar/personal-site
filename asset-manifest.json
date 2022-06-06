@@ -1,12 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.7106940f.css",
-    "main.js": "/static/js/main.38cadc7f.js",
+    "main.js": "/static/js/main.9351aa05.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/Memoji.png": "/static/media/Memoji.ea0c0b27b42899241e57.png",
     "static/media/code.jpeg": "/static/media/code.8f83cd479dd070dff921.jpeg",
     "static/media/imageResizerIcon.png": "/static/media/imageResizerIcon.4a4c2ee3d6e826b84a56.png",
     "static/media/JavaIcon.jpg": "/static/media/JavaIcon.2e87f0bd41b9b67fec1b.jpg",
+    "static/media/Resume.pdf": "/static/media/Resume.80a1da93683d65c121f1.pdf",
     "static/media/CalculatorIcon.png": "/static/media/CalculatorIcon.d229bc31eb8e497a4bc8.png",
     "static/media/clojureIcon.png": "/static/media/clojureIcon.2f7b59a5d1dee6709f32.png",
     "static/media/SwiftIcon.jpg": "/static/media/SwiftIcon.25e8e36a0c62d83facd8.jpg",
@@ -18,11 +19,11 @@
     "static/media/EmailIcon.svg": "/static/media/EmailIcon.583af5385233aabc58ba700d0dd35ae9.svg",
     "index.html": "/index.html",
     "main.7106940f.css.map": "/static/css/main.7106940f.css.map",
-    "main.38cadc7f.js.map": "/static/js/main.38cadc7f.js.map",
+    "main.9351aa05.js.map": "/static/js/main.9351aa05.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.7106940f.css",
-    "static/js/main.38cadc7f.js"
+    "static/js/main.9351aa05.js"
   ]
 }
