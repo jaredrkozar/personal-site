@@ -7,6 +7,7 @@ function Card(props) {
 
     return (
       <div className={classstr}>
+        <a href={props.link}>
           <div class="group flex flex-wrap relative">
           <img class="object-cover h-14 w-14 absolute top-2 left-2 rounded-md" src={props.appIcon}></img>
             
@@ -27,6 +28,7 @@ function Card(props) {
              </div>
       
       </div>
+      </a>
       </div>
     );
   }
