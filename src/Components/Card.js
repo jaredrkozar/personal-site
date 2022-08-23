@@ -23,7 +23,7 @@ function Card(props) {
           
             </div>
 
-
+            <h1 class="italic top-2 ml-2 mr-1 relative">{props.language}</h1>
               <h1 class="text-white top-5 ml-2 mr-1 relative">{props.mainDescription}</h1>
              </div>
       
