@@ -2,14 +2,31 @@ import React from 'react';
 import ReactDOM from 'react-dom/client';
 import './index.css';
 import App from './App';
+import AppPage from './Subpages/AppPage';
+import PageNotFound from './Subpages/PageNotFound';
 import reportWebVitals from './reportWebVitals';
+import {
+  BrowserRouter,
+  Routes,
+  Route,
+} from "react-router-dom";
 
 const root = ReactDOM.createRoot(document.getElementById('root'));
 root.render(
   <React.StrictMode>
-    <App />
+    <div className='bg-white dark:bg-slate-800 dark:text-white min-h-screen'>
+    <BrowserRouter>
+      <Routes>
+      <Route path="/" element={<App />} />
+          <Route path=":slug" element={<AppPage />} />
+        <Route path="*" element={<PageNotFound />} />
+      </Routes>
+  </BrowserRouter>
+    </div>
   </React.StrictMode>
+  
 );
+
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))
