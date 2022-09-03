@@ -31,7 +31,8 @@ export const appList = {
         link: "www.google.com",
         firstColor: 'from-indigo-500',
         secondColor: 'to-indigo-700',
-        macScreenshots: [icons.Pic1]
+        iPadScreenshots: [icons.imageResizeriPadPic1, icons.imageResizeriPadPic2, icons.imageResizeriPadPic3],
+        macScreenshots: [icons.imageResizerMacPic1, icons.imageResizerMacPic2, icons.imageResizerMacPic3]
     },
     "calculator": {
         name: "Calculator",
