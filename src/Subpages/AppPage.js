@@ -7,6 +7,9 @@ import 'swiper/css/pagination';
 import 'swiper/css/navigation';
 import { AppStoreButton, GithubButton, IPhoneButton, IPadButton, MacButton, WatchButton } from "../Components/Buttons.js";
 import { useState } from "react";
+import NavBar from "../NavBar/NavBar";
+import { DetailStyle } from "../Components/TextStyles.js";
+import Footer from  "../Footer/Footer";
 
 function AppPage() {
   const { slug } = useParams();
@@ -33,29 +36,33 @@ function AppPage() {
   };
 
   return (
-    <div class="space-y-20 ml-5 relative left-20 top-24">
+    <div class="w-full bg-inherit">
+       <div className="flex flex-col fixed w-full bg-inherit z-10">
+        <NavBar showBackButton={true}/>
+      </div>
+      <div class="space-y-4 ml-20 relative top-24">
       <div className="relative gap-6 flex flex-wrap">
-          <img class="object-cover h-40 w-40 rounded-xl" src={app.appIcon} alt="app icon"></img>
+          <img class="object-cover h-40 w-40 rounded-3xl" src={app.appIcon} alt="app icon"></img>
           <div className="grid grid-rows-2 gap-y-2">
-              <h1 class="text-5xl font-bold">{app.name}</h1>
-              <h1 class="text-4xl italic">{app.language}</h1>
-              <div className="relative gap-6 flex flex-wrap">
+              <DetailStyle mainText={app.name} detailText={app.language} isItalic={true}></DetailStyle>
+              <div className="relative gap-6 flex flex-wrap h-10">
                 <AppStoreButton link="www.google.com"></AppStoreButton>
                 <GithubButton link="www.google.com"></GithubButton>
               </div>
             </div>
         </div>
-        <h1 class="text-5xl font-bold">Screenshots</h1>
 
-        <div className="relative gap-6 flex flex-wrap">
-          {app.watchScreenshots ? <WatchButton onClick={watchButtonsClicked}></WatchButton> : null}
-          {app.iPhoneScreenshots ? <IPhoneButton onClick={iPhoneButtonsClicked}></IPhoneButton> : null}
-          {app.iPadScreenshots ? <IPadButton onClick={iPadButtonsClicked}></IPadButton> : null}
-          {app.macScreenshots ? <MacButton onClick={macButtonsClicked}></MacButton> : null}
-        </div>
+      <div className="space-y-8">
+      <h1 class="text-5xl font-bold">Screenshots</h1>
 
-        <div className="relative top-4 right-20 container mx-auto">
-        <Swiper
+<div className="relative gap-6 flex flex-wrap">
+  {app.watchScreenshots ? <WatchButton onClick={watchButtonsClicked}></WatchButton> : null}
+  {app.iPhoneScreenshots ? <IPhoneButton onClick={iPhoneButtonsClicked}></IPhoneButton> : null}
+  {app.iPadScreenshots ? <IPadButton onClick={iPadButtonsClicked}></IPadButton> : null}
+  {app.macScreenshots ? <MacButton onClick={macButtonsClicked}></MacButton> : null}
+</div>
+        <div className="relative space-y-5 right-20 container mx-auto">
+          <Swiper
           modules={[Navigation, Keyboard]}
           className="object-cover"
           tag="section"
@@ -74,7 +81,7 @@ function AppPage() {
           }}
           loop={true}
           onReachEnd={() => console.log('Swiper end reached')}
-        >
+          >
 
           {screenshots.map((user, id) => (
             <SwiperSlide>
@@ -84,9 +91,16 @@ function AppPage() {
             />
             </SwiperSlide>
           ))}
-              </Swiper>
+            </Swiper>
+
+            <DetailStyle mainText="Description" detailText={app.longDescription} isItalic={false}></DetailStyle>
         </div>
+      </div>
           
+    </div>
+    <div className="py-20">
+    <Footer className="bg-green-300"></Footer>
+    </div>
     </div>
   );
 }

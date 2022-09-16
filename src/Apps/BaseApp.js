@@ -18,10 +18,15 @@ export const appList = {
         name: "VisionText",
         language: 'Swift',
         shortDescription: 'Import an image by scanning a document, taking a picture, importing via the Files app, and more. You can then read the text on the picture aloud, and adjust its speed, pitch and volume.',
+        longDescription:  ["VisionText is an easy to use, lightweight app that lets you extract and read aloud the text from scanned documents, photos in your photo library, images on the internet, and more.",
+ "VisionText is an easy to use, lightweight app that lets you extract and read aloud the text from scanned documents, photos in your photo library, images on the internet, and more.",
+        "- Designed specifically for those who are visually impaired, with full Dynamic Text and VoiceOver support."],
         appIcon: VisionTextIcon,
         link: "www.google.com",
         firstColor: 'from-red-400',
         secondColor: 'to-red-700',
+        iPadScreenshots: [icons.VisionTextiPadPic1, icons.VisionTextiPadPic2, icons.VisionTextiPadPic3],
+        macScreenshots: [icons.VisionTextMacPic1, icons.VisionTextMacPic2, icons.VisionTextMacPic3]
     },
     "imageresizer": {
         name: "imageResizer",
