@@ -1,11 +1,11 @@
 import { useParams } from "react-router-dom";
-import { appList } from '../Apps/BaseApp.js';
+import { appList, otherAppList } from '../Apps/BaseApp.js';
 import { Swiper, SwiperSlide } from 'swiper/react';
 import { Navigation, Keyboard } from 'swiper';
 import 'swiper/css';
 import 'swiper/css/pagination';
 import 'swiper/css/navigation';
-import { AppStoreButton, GithubButton, IPhoneButton, IPadButton, MacButton, WatchButton } from "../Components/Buttons.js";
+import { AppStoreButton, GithubButton, IPhoneButton, IPadButton, MacButton, WatchButton, CommandLineButton } from "../Components/Buttons.js";
 import { useState } from "react";
 import NavBar from "../NavBar/NavBar";
 import { DetailStyle } from "../Components/TextStyles.js";
@@ -13,12 +13,12 @@ import Footer from  "../Footer/Footer";
 
 function AppPage() {
   const { slug } = useParams();
-  const app = appList[slug];
+  const app = appList[slug] ?? otherAppList[slug];
+  console.log(app);
   document.title = app.name;
-  const [screenshots, setScreenshots] = useState(app.macScreenshots);
+  const [screenshots, setScreenshots] = useState(app.iPhoneScreenshots ?? app.iPadScreenshots ?? app.macScreenshots ?? app.commandLineScreenshots);
 
   const iPhoneButtonsClicked = () => {
-    console.log(app.iPhoneScreenshots.length)
     setScreenshots(app.iPhoneScreenshots)
   };
 
@@ -35,19 +35,23 @@ function AppPage() {
     setScreenshots(app.watchScreenshots)
   };
 
+  const CommandLineButtonsClicked = () => {
+    setScreenshots(app.commandLineScreenshots)
+  };
+
   return (
     <div class="w-full bg-inherit">
        <div className="flex flex-col fixed w-full bg-inherit z-10">
         <NavBar showBackButton={true}/>
       </div>
-      <div class="space-y-4 ml-20 relative top-24">
+      <div class="space-y-4 ml-20 relative top-28">
       <div className="relative gap-6 flex flex-wrap">
           <img class="object-cover h-40 w-40 rounded-3xl" src={app.appIcon} alt="app icon"></img>
           <div className="grid grid-rows-2 gap-y-2">
               <DetailStyle mainText={app.name} detailText={app.language} isItalic={true}></DetailStyle>
               <div className="relative gap-6 flex flex-wrap h-10">
-                <AppStoreButton link="www.google.com"></AppStoreButton>
-                <GithubButton link="www.google.com"></GithubButton>
+                {app.appStoreLink ? <AppStoreButton link="www.google.com"></AppStoreButton> : null}
+                <GithubButton link={app.githubLink}></GithubButton>
               </div>
             </div>
         </div>
@@ -60,6 +64,7 @@ function AppPage() {
   {app.iPhoneScreenshots ? <IPhoneButton onClick={iPhoneButtonsClicked}></IPhoneButton> : null}
   {app.iPadScreenshots ? <IPadButton onClick={iPadButtonsClicked}></IPadButton> : null}
   {app.macScreenshots ? <MacButton onClick={macButtonsClicked}></MacButton> : null}
+  {app.commandLineScreenshots ? <CommandLineButton onClick={CommandLineButtonsClicked}></CommandLineButton> : null}
 </div>
         <div className="relative space-y-5 right-20 container mx-auto">
           <Swiper
@@ -96,10 +101,9 @@ function AppPage() {
             <DetailStyle mainText="Description" detailText={app.longDescription} isItalic={false}></DetailStyle>
         </div>
       </div>
-          
     </div>
-    <div className="py-20">
-    <Footer className="bg-green-300"></Footer>
+    <div className="relative py-28">
+      <Footer></Footer>
     </div>
     </div>
   );

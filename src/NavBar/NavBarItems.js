@@ -1,6 +1,5 @@
-import Resume from '../Images/Resume.pdf'
-import { faLinkedin, faGithub } from "@fortawesome/free-brands-svg-icons";
-import { faFileLines, faEnvelope } from "@fortawesome/free-solid-svg-icons";
+import Resume from '../Images/Resume-3.pdf'
+
 import { Linkedin, Github, FileEarmarkText, Envelope } from "react-bootstrap-icons";
 
 export const navBarItemList = [

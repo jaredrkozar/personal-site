@@ -1,4 +1,4 @@
-import { Apple, Github, Phone, Tablet, Laptop, Smartwatch, ChevronLeft } from "react-bootstrap-icons";
+import { Apple, Github, Phone, Tablet, Laptop, Smartwatch, ChevronLeft, Terminal } from "react-bootstrap-icons";
 import MemojiIcon from  "../Images/Memoji.png";
 
 const baseButtonStyle = `rounded-lg border border-blue-500 border-2 text-blue-500 gap-2 relative align-middle py-2 px-2 hover:bg-blue-500 hover:text-white`
@@ -31,12 +31,24 @@ export function GithubButton(props) {
     )
 };
 
+export function CommandLineButton(props) {
+    return (
+        <div className={baseButtonStyle} onClick={props.onClick}>
+         <div className="flex items-center gap-2">
+
+         <Terminal size={25}/>
+        <h2>Command Line</h2>
+        </div>
+    </div>
+    )
+};
+
 export function IPhoneButton(props) {
     return (
         <div className={baseButtonStyle} onClick={props.onClick}>
          <div className="flex items-center gap-2">
 
-         <Phone size={20}/>
+         <Phone size={25}/>
         <h2>iPhone</h2>
         </div>
     </div>
@@ -48,7 +60,7 @@ export function IPadButton(props) {
         <div className={baseButtonStyle} onClick={props.onClick}>
          <div className="flex items-center gap-2">
 
-         <Tablet size={20}/>
+         <Tablet size={25}/>
         <h2>iPad</h2>
         </div>
     </div>
@@ -60,7 +72,7 @@ export function MacButton(props) {
         <div className={baseButtonStyle} onClick={props.onClick}>
          <div className="flex items-center gap-2">
 
-        <Laptop/>
+        <Laptop size={25}/>
         <h2>Mac</h2>
         </div>
     </div>
@@ -72,7 +84,7 @@ export function WatchButton(props) {
         <div className={baseButtonStyle} onClick={props.onClick}>
          <div className="flex items-center gap-2">
 
-        <Smartwatch/>
+        <Smartwatch size={25}/>
         <h2>Apple Watch</h2>
         </div>
     </div>
