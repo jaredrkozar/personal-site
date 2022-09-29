@@ -40,11 +40,11 @@ function AppPage() {
   };
 
   return (
-    <div class="w-full bg-inherit">
+    <div class="w-full bg-inherit relative">
        <div className="flex flex-col fixed w-full bg-inherit z-10">
         <NavBar showBackButton={true}/>
       </div>
-      <div class="space-y-4 ml-20 relative top-28">
+      <div class="space-y-4 relative top-28 left-20  mr-28">
       <div className="relative gap-6 flex flex-wrap">
           <img class="object-cover h-40 w-40 rounded-3xl" src={app.appIcon} alt="app icon"></img>
           <div className="grid grid-rows-2 gap-y-2">
@@ -97,10 +97,9 @@ function AppPage() {
             </SwiperSlide>
           ))}
             </Swiper>
-
-            <DetailStyle mainText="Description" detailText={app.longDescription} isItalic={false}></DetailStyle>
         </div>
       </div>
+      <DetailStyle mainText="Description" detailText={app.longDescription} isItalic={false}></DetailStyle>
     </div>
     <div className="relative py-28">
       <Footer></Footer>

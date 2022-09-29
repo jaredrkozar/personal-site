@@ -14,7 +14,7 @@ function NavBar(props) {
 
   return (
     <nav className="bg-inherit text-inherit flex items-center h-20 relative top-5">
-        <div className="w-full flex flex-wrap bg-transparent justify-between px-6">
+        <div className="w-full flex flex-wrap bg-transparent justify-between px-4">
           
             {leftItem}
             <div class="flex items-center relative gap-3">
