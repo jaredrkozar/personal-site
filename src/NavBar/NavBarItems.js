@@ -1,5 +1,3 @@
-import Resume from '../Images/Resume-3.pdf'
-
 import { Linkedin, Github, FileEarmarkText, Envelope } from "react-bootstrap-icons";
 
 export const navBarItemList = [
@@ -16,7 +14,6 @@ export const navBarItemList = [
     {
         name: "Resume",
         icon: <FileEarmarkText size={35}/>,
-        link: {Resume},
     },
     {
         name: "Email",
