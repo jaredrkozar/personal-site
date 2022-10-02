@@ -12,7 +12,7 @@ function App() {
       <div className="flex flex-col fixed w-full bg-inherit z-10">
         <NavBar showBackButton={false}/>
       </div>
-        <div className="ml-5 relative mr-3 mr-5 space-y-20 top-20 min-h-screen">
+        <div className="ml-5 relative mr-5 space-y-10 py-20">
           <Header/>
           <AboutMe/>
           <IOSApps/>

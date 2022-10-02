@@ -1,21 +1,30 @@
 import PersonIcon from  "../Images/personIcon.png";
+import { Person, Star, Briefcase } from "react-bootstrap-icons";
 
-export const infoList = [{
-    name: 'About Me',
-    language: '',
-    shortDescription: 'I am a senior at the University of Hartford, where I am working towards my BS in computer science and BA in multimedia web design. I currently have a 3.98/4.0 GPA, and I participate in many clubs, including the Cybersecurity Club, the Computing Club, and the Hillel chapter at UHart..',
-    appIcon: PersonIcon,
-    link: "www.google.com",
-    firstColor: 'from-blue-400',
-    secondColor: 'to-blue-700',
-},
-{
-    name: 'Skills',
-    language: '',
-    shortDescription: 'I know many languages, technologies, and programming styles including Swift, React, Java, Git, object-oriented programming, functional programming, and more. Check out all my skills here..',
-    appIcon: PersonIcon,
-    link: "www.google.com",
-    firstColor: 'from-blue-400',
-    secondColor: 'to-blue-700',
-}
-]
+
+export const infoList = {
+    "aboutme": {
+        name: "About Me",
+        language: '',
+        appIcon: <Person size={50}/>,
+        shortDescription: 'You can learn more about me and my hobbies here.',
+        firstColor: 'from-red-400',
+        secondColor: 'to-red-700'
+    },
+    "skills": {
+        name: "Skills",
+        language: '',
+        appIcon: <Star size={45}/>,
+        shortDescription: 'You can view all the programming languages, styles, and other skills here.',
+        firstColor: 'from-orange-400',
+        secondColor: 'to-orange-700'
+    },
+    "workexperience": {
+        name: "Work Experience",
+        language: '',
+        appIcon: <Briefcase size={45}/>,
+        shortDescription: "You can check out the companies I've worked for, such as Travelers insurance, here.",
+        firstColor: 'from-yellow-400',
+        secondColor: 'to-yellow-700'
+    },
+};

@@ -13,7 +13,7 @@ function iOSApps() {
         
         {Object.entries(appList).map(([slug]) => (
         <Link to={`/${slug}`}>
-        <Card app={appList[slug]}></Card>
+        <Card app={appList[slug]} useSVG={false}></Card>
         </Link>
       ))}
         </div>

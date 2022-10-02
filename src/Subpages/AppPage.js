@@ -38,13 +38,12 @@ function AppPage() {
   const CommandLineButtonsClicked = () => {
     setScreenshots(app.commandLineScreenshots)
   };
-
   return (
     <div class="w-full bg-inherit relative">
        <div className="flex flex-col fixed w-full bg-inherit z-10">
         <NavBar showBackButton={true}/>
       </div>
-      <div class="space-y-4 relative top-28 left-20  mr-28">
+      <div class="space-y-4 relative top-28 left-20 mr-20 lg:mr-28">
       <div className="relative gap-6 flex flex-wrap">
           <img class="object-cover h-40 w-40 rounded-3xl" src={app.appIcon} alt="app icon"></img>
           <div className="grid grid-rows-2 gap-y-2">
@@ -56,16 +55,36 @@ function AppPage() {
             </div>
         </div>
 
+        <div className="space-y-8">
+        {app.technologies ? 
+          <div>
+          <h1 className="text-5xl font-bold">
+          Technologies
+        </h1>
+        
+          <div className="flex flex-wrap">
+        
+        {app.technologies.map((tag, id) => (
+          <h1 key={tag.id}>
+            <h1 className="bg-blue-500 text-white p-2 m-2 rounded-md">{tag}</h1>
+          </h1>
+        ))}
+        </div>
+
+          </div> : null}
+      </div>
+
       <div className="space-y-8">
       <h1 class="text-5xl font-bold">Screenshots</h1>
 
-<div className="relative gap-6 flex flex-wrap">
-  {app.watchScreenshots ? <WatchButton onClick={watchButtonsClicked}></WatchButton> : null}
-  {app.iPhoneScreenshots ? <IPhoneButton onClick={iPhoneButtonsClicked}></IPhoneButton> : null}
-  {app.iPadScreenshots ? <IPadButton onClick={iPadButtonsClicked}></IPadButton> : null}
-  {app.macScreenshots ? <MacButton onClick={macButtonsClicked}></MacButton> : null}
-  {app.commandLineScreenshots ? <CommandLineButton onClick={CommandLineButtonsClicked}></CommandLineButton> : null}
-</div>
+      <div className="relative gap-6 flex flex-wrap">
+        {app.watchScreenshots ? <WatchButton onClick={watchButtonsClicked}></WatchButton> : null}
+        {app.iPhoneScreenshots ? <IPhoneButton onClick={iPhoneButtonsClicked}></IPhoneButton> : null}
+        {app.iPadScreenshots ? <IPadButton onClick={iPadButtonsClicked}></IPadButton> : null}
+        {app.macScreenshots ? <MacButton onClick={macButtonsClicked}></MacButton> : null}
+        {app.commandLineScreenshots ? <CommandLineButton onClick={CommandLineButtonsClicked}></CommandLineButton> : null}
+      </div>
+
         <div className="relative space-y-5 right-20 container mx-auto">
           <Swiper
           modules={[Navigation, Keyboard]}

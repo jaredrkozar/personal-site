@@ -14,7 +14,7 @@ function OtherApps() {
          
         {Object.entries(otherAppList).map(([slug]) => (
         <Link to={`/${slug}`}>
-        <Card app={otherAppList[slug]}></Card>
+        <Card app={otherAppList[slug]} useSVG={false}></Card>
         </Link>
       ))}
         </div>

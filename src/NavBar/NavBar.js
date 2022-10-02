@@ -13,11 +13,11 @@ function NavBar(props) {
   }
 
   return (
-    <nav className="bg-inherit text-inherit flex items-center h-20 relative top-5">
-        <div className="w-full flex flex-wrap bg-transparent justify-between px-4">
+    <nav className="bg-inherit text-inherit flex h-20 relative top-5">
+        <div className="w-full flex flex-wrap bg-transparent items-center justify-between px-4">
           
             {leftItem}
-            <div class="flex items-center relative gap-3">
+            <div class="flex relative gap-3">
             {navBarItemList.map((item, id) => (
                 <NavBarItem item={item} key={id}></NavBarItem>
             ))}

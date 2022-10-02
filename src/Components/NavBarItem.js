@@ -1,5 +1,5 @@
 import React from "react";
-import Resume from '../Images/Resume-3.pdf'
+import Resume from '../Images/Resume.pdf'
 
 function NavBarItem(props) {
     return (
