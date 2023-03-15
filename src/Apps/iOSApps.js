@@ -1,24 +1,29 @@
-import React from "react";
-import Card from '../Components/Card';
-import { appList } from './BaseApp.js';
-import { DetailStyle } from "../Components/TextStyles.js";
-import { Link } from "react-router-dom";
+import { HeaderTextStyle } from "../components/TextStyles"
 
-function iOSApps() {
-  return (
-    <div className="relative">
+function IOSApps() {
+    const iOSAppsItemList = [
+        {
+             name: "LinkedIn",
+             link: "https://www.linkedin.com/in/jaredkozar/",
+         },
+         {
+            name: "GitHub",
+            link: "https://github.com/jaredrkozar",
+        },
+        {
+            name: "Resume",
+        },
+        {
+            name: "Email",
+            link: "mailto:jared.rkozar@gmail.com",
+        },
+     ]
 
-        <DetailStyle mainText="iOS Apps" detailText="Here are some of the iOS, iPadOS, Mac, and Apple Watch apps I've worked on:" isItalic={false}></DetailStyle>
-        <div className="relative grid top-800 sm:grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4 py-2">
-        
-        {Object.entries(appList).map(([slug]) => (
-        <Link to={`/${slug}`}>
-        <Card app={appList[slug]} useSVG={false}></Card>
-        </Link>
-      ))}
+    return (
+        <div className="">
+            <HeaderTextStyle title="iOS Apps" bgStyle="bg-red-600 dark:bg-red-400" description="Here are some of the iOS, iPadOS, Mac, and Apple Watch apps I've worked on:"></HeaderTextStyle>
         </div>
-    </div>
-  );
+    )
 }
 
-export default iOSApps;
+export default IOSApps;

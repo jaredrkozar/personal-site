@@ -8,9 +8,12 @@ module.exports = {
         '40px': '40px',
         '20px': '20px',
       },
-
+      spacing: {
+        '128': '50rem',
+      },
       colors: {
         'lightBlue': '#96D2FF',
+        'dark': '#121212'
       },
       strokeWidth: {
         '3': '3px',
