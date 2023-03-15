@@ -3,6 +3,16 @@ import profilePicture from "../profilePicture.jpeg"
 import Resume from "../Resume-9.pdf"
 
 function NavBar(props) {
+    const itemClicked = (item) => {
+        return (
+            <a href = {item.name == "Resume" ? Resume : item.link}>
+        
+                    <div className="transform transition duration-500 hover:scale-105 p-2 gap-2">
+                        <h1 className="text-2xl">{item.name}</h1>
+                    </div>
+                </a>
+        )
+    }
   const navBarItemList = [
     {
          name: "LinkedIn",
@@ -34,12 +44,7 @@ function NavBar(props) {
             <div className="flex relative gap-6 flex-row align-middle">
             {navBarItemList.map((item, id) => (
                 <div className="rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-center">
-                <a href = {item.name == "Resume" ? Resume : item.link}>
-        
-                    <div className="transform transition duration-500 hover:scale-105 p-2 gap-2">
-                        <h1 className="text-2xl">{item.name}</h1>
-                    </div>
-                </a>
+                {itemClicked(item)}
              </div>
             ))}
             </div>
