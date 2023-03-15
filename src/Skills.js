@@ -61,10 +61,10 @@ function Skills() {
  ]
 
   return (
-    <div className="relative w-full h-128 bg-inherit justify-center items-start">
-        <div className="flex flex-row">
+    <div className="relative w-full h-fit justify-center items-start">
+        <div className="relative flex flex-row">
             <div className="relative mr-20 flex flex-col">
-            <HeaderTextStyle title="Skills" bgStyle="bg-green-600 dark:bg-green-500" description="Here are some of the languages, frameworks, and technologies I know:"></HeaderTextStyle>
+            <HeaderTextStyle title="Skills" bgStyle="bg-green-600 dark:bg-green-500" description="Here are some of the languages, frontend and backend libraries, and tools I know:"></HeaderTextStyle>
 
             <TechList title="Languages" array={languagesList} colorStyles="bg-green-800/30 dark:bg-green-500/25" textStyles="text-green-800 dark:text-green-500"/>
             <TechList title="Frontend" array={frontEndList} colorStyles="bg-orange-600/40 dark:bg-orange-500/25" textStyles="text-orange-800 dark:text-orange-500"/>
