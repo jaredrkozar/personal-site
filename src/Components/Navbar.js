@@ -1,8 +1,11 @@
-import React from "react";
+import React, {useState} from "react";
 import profilePicture from "../profilePicture.jpeg"
 import Resume from "../Resume-9.pdf"
+import { BsChevronDown, BsChevronUp } from "react-icons/bs";
 
 function NavBar(props) {
+    const [menuOpen, setMenuOpen] = useState(false);
+
     const itemClicked = (item) => {
         return (
             <a href = {item.name == "Resume" ? Resume : item.link}>
@@ -13,6 +16,21 @@ function NavBar(props) {
                 </a>
         )
     }
+
+    const renderItems = (direction) => {
+        const className = "w-full relative gap-6 align-middle justify-center flex " + direction
+        console.log(className)
+        return (
+            <div className={className}>
+                {navBarItemList.map((item, id) => (
+                    <div className="dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-center">
+                    {itemClicked(item)}
+                </div>
+                ))}
+            </div>
+        )
+    }
+
   const navBarItemList = [
     {
          name: "LinkedIn",
@@ -31,8 +49,12 @@ function NavBar(props) {
     },
  ]
 
+ const handleMenu = () => {
+    setMenuOpen(menuOpen => !menuOpen)
+ }
+
   return (
-    <header className="sticky top-0 z-10 backdrop-blur-md border-b border-gray-200 h-16 items-center flex bg-slate-200/30 dark:bg-black/50">
+    <header className="align-middle sticky top-0 z-10 backdrop-blur-md border-b border-gray-200 h-fit items-center inline-block bg-slate-200/30 dark:bg-black/50">
         <div className="w-full flex flex-wrap flex-row bg-transparent justify-between px-4 text-black dark:text-white">
           
           <div class="relative gap-3">
@@ -40,16 +62,24 @@ function NavBar(props) {
               <img class="object-cover h-14 w-14 rounded-full border-white border" src={profilePicture}></img>
               <h1>Jared Kozar</h1>
               </div>
-          </div>
-            <div className="flex relative gap-6 flex-row align-middle">
-            {navBarItemList.map((item, id) => (
-                <div className="rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-center">
-                {itemClicked(item)}
-             </div>
-            ))}
-            </div>
 
+          </div>
+
+          <div className="hidden md:flex">
+            {renderItems("flex-row")}
+          </div>
+
+            <div className="flex md:hidden text-5xl relative gap-6 flex-row align-middle">
+                <button class="text-5xl" onClick={event =>handleMenu()}>
+                    {menuOpen ? <BsChevronUp/> : <BsChevronDown/>}
+                </button>
+            </div>
         </div>
+
+        <div className="flex md:hidden">
+            {menuOpen ? renderItems("flex-col") : null}
+          </div>
+
     </header>
   );
 }
