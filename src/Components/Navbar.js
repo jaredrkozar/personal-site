@@ -6,18 +6,6 @@ import { BsChevronDown, BsChevronUp, BsLinkedin, BsGithub, BsFileText, BsEnvelop
 function NavBar(props) {
     const [menuOpen, setMenuOpen] = useState(false);
 
-    const itemClicked = (item) => {
-        return (
-            <a href = {item.name == "Resume" ? Resume : item.link}>
-        
-                    <div className="transform transition duration-500 hover:scale-105 p-2 gap-2 flex justify-center items-center">
-                        <h1 className="text-3xl">{item.icon}</h1>
-                        <h1 className="text-2xl">{item.name}</h1>
-                    </div>
-                </a>
-        )
-    }
-
     const renderItems = (direction) => {
         const className = "w-full relative gap-6 align-middle justify-center flex " + direction
 
@@ -25,8 +13,13 @@ function NavBar(props) {
             <div className={className}>
                 {navBarItemList.map((item, id) => (
                     <div className="dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-center" key={id}>
-                    {itemClicked(item)}
-                </div>
+                        <a href = {item.name == "Resume" ? Resume : item.link}>
+                            <div className="transform transition duration-500 hover:scale-105 p-2 gap-2 flex justify-center items-center">
+                                <h1 className="text-3xl">{item.icon}</h1>
+                                <h1 className="text-2xl">{item.name}</h1>
+                            </div>
+                        </a>
+                    </div>
                 ))}
             </div>
         )
