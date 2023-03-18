@@ -59,7 +59,7 @@ function NavBar(props) {
  }
 
   return (
-    <header className="align-middle sticky top-0 h-fit p-2 z-10 backdrop-blur-md border-b border-gray-200 h-fit items-center inline-block bg-slate-200/30 dark:bg-black/50">
+    <header className="transition-height ease align-middle sticky top-0 h-fit p-2 z-10 backdrop-blur-md border-b border-gray-200 h-fit items-center inline-block bg-slate-200/30 dark:bg-black/50">
         <div className="w-full flex flex-wrap flex-row bg-transparent justify-between px-4 text-black dark:text-white">
           
           <div className="relative gap-3">
