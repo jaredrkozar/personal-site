@@ -12,9 +12,9 @@ function NavBar(props) {
         return (
             <div className={className}>
                 {navBarItemList.map((item, id) => (
-                    <div className="dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-start" key={id}>
-                        <a href = {item.name == "Resume" ? Resume : item.link}>
-                            <div className="transform transition duration-500 hover:scale-105 p-2 gap-8 md:gap-3 flex justify-center items-center">
+                    <div className="flex dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg items-center justify-start" key={id}>
+                        <a className="inline-flex w-full h-full" href = {item.name == "Resume" ? Resume : item.link}>
+                            <div className="flex transform transition duration-500 hover:scale-105 p-2 gap-8 md:gap-3 flex justify-center items-center">
                                 <h1 className="text-3xl">{item.icon}</h1>
                                 <h1 className="text-2xl">{item.name}</h1>
                             </div>
@@ -52,7 +52,7 @@ function NavBar(props) {
  }
 
   return (
-    <header className="transition-height ease align-middle sticky top-0 h-fit p-2 z-10 backdrop-blur-md border-b border-gray-200 h-fit items-center inline-block bg-slate-200/30 dark:bg-black/50">
+    <header className="transition-height ease align-middle sticky top-0 h-fit p-2 z-10 backdrop-blur-md border-b border-gray-200 h-fit items-center bg-slate-200/30 dark:bg-black/50">
         <div className="w-full flex flex-wrap flex-row bg-transparent justify-between px-4 text-black dark:text-white">
           
           <div className="relative gap-3">
