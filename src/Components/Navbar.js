@@ -7,14 +7,14 @@ function NavBar(props) {
     const [menuOpen, setMenuOpen] = useState(false);
 
     const renderItems = (direction) => {
-        const className = "w-full relative gap-6 align-middle justify-center flex " + direction
+        const className = "w-full relative gap-6 align-middle justify-start flex " + direction
 
         return (
             <div className={className}>
                 {navBarItemList.map((item, id) => (
-                    <div className="dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-center" key={id}>
+                    <div className="dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg flex items-center justify-start" key={id}>
                         <a href = {item.name == "Resume" ? Resume : item.link}>
-                            <div className="transform transition duration-500 hover:scale-105 p-2 gap-2 flex justify-center items-center">
+                            <div className="transform transition duration-500 hover:scale-105 p-2 gap-8 md:gap-3 flex justify-center items-center">
                                 <h1 className="text-3xl">{item.icon}</h1>
                                 <h1 className="text-2xl">{item.name}</h1>
                             </div>
@@ -67,7 +67,7 @@ function NavBar(props) {
             {renderItems("flex-row")}
           </div>
 
-            <div className="flex md:hidden text-5xl relative gap-6 flex-row align-middle">
+            <div className="flex md:hidden text-5xl relative gap-6 flex-row align-middle justify-start">
                 <button className="text-5xl" onClick={event =>handleMenu()}>
                     {menuOpen ? <BsChevronUp/> : <BsChevronDown/>}
                 </button>
