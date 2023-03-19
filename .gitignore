@@ -4,10 +4,6 @@
 /node_modules
 /.pnp
 .pnp.js
-./CNAME.txt
-./CNAME
-CNAME
-CNAME.txt
 
 # testing
 /coverage
