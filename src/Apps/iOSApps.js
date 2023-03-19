@@ -35,7 +35,7 @@ function IOSApps() {
 
     return (
         <div className="">
-            <HeaderTextStyle title="iOS Apps" bgStyle="bg-red-600 dark:bg-red-400" description="Here are some of the iOS, iPadOS, Mac, and Apple Watch apps I've worked on:"></HeaderTextStyle>
+            <HeaderTextStyle title="iOS Apps" bgStyle="bg-yellow-600 dark:bg-yellow-500" description="Here are some of the iOS, iPadOS, Mac, and Apple Watch apps I've worked on:"></HeaderTextStyle>
         </div>
     )
 }

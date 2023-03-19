@@ -3,6 +3,7 @@ import AboutMe from "./AboutMe";
 import IOSApps from "./apps/iOSApps";
 import Skills from "./Skills";
 import Experience from "./Experience";
+import Contact from "./Contact";
 
 function App() {
   return (
@@ -16,6 +17,8 @@ function App() {
       <div className="ml-5 relative mr-5 space-y-10 py-20">
       <Skills/>
       <Experience/>
+      <IOSApps/>
+      <Contact/>
       </div>
     </div>
   );
