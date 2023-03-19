@@ -20,6 +20,10 @@ function App() {
       <IOSApps/>
       <Contact/>
       </div>
+      <div className="w-full justify-center items-center flex flex-col">
+        <h3 className="text-black dark:text-white text-2xl">Jared Kozar, {new Date().getFullYear()}</h3>
+        <h3 className="text-black dark:text-white text-2xl">Made with React and Tailwind CSS</h3>
+      </div>
     </div>
   );
 }
