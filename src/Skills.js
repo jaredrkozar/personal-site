@@ -66,7 +66,7 @@ function Skills() {
             <div className="relative mr-20 flex flex-col">
             <HeaderTextStyle title="Skills" bgStyle="bg-green-600 dark:bg-green-500" description="Below are some of the languages, libraries and tools I work with:"></HeaderTextStyle>
 
-            <TechList title="Languages" array={languagesList} colorStyles="bg-green-800/30 dark:bg-green-500/25" textStyles="text-green-800 dark:text-green-500"/>
+            <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/40 dark:bg-green-500/25" textStyles="text-green-700 dark:text-green-500"/>
             <TechList title="Frontend" array={frontEndList} colorStyles="bg-orange-600/40 dark:bg-orange-500/25" textStyles="text-orange-800 dark:text-orange-500"/>
             <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-500/25" textStyles="text-blue-800 dark:text-blue-500"/>
             <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-600/40 dark:bg-yellow-500/25" textStyles="text-yellow-800 dark:text-yellow-500"/>
