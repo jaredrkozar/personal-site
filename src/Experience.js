@@ -29,8 +29,7 @@ function Experience() {
             startDate: "August 2022",
             endDate: "December 2022",
             responsibilities: [
-              "Attended all classes and helped students who were struggling with code",
-              "Held office hours twice a week to assist students who needed clarification on code and concepts taught in class",
+              "Attended all classes and held office hours twice a week to assist students who needed clarification on code and concepts taught in class",
               "Checked student work for completeness, plagiarism and functionality"
           ]
           }
