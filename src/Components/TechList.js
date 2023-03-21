@@ -8,7 +8,7 @@ export function TechList(props) {
             {props.array.map((tech) =>
                 <div className={listStyle + ""} key={tech.name}>
                     <h3 className={props.textStyles + " text-4xl"}>{tech.icon}</h3>
-                    <h1 className={"text-3xl font-medium space-x-12 " + props.textStyles}>{tech.name}</h1>
+                    <h1 className={"md:text-3xl text-2xl font-medium space-x-12 " + props.textStyles}>{tech.name}</h1>
                 </div>
             )}
         </div>
