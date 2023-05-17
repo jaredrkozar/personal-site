@@ -15,3 +15,13 @@ export function TechList(props) {
         </div>
     )
 }
+
+export function TechListSmall(props) {
+    const listStyle = "text-2xl space-x-3 rounded-md relative h-fit w-fit px-2 flex flex-row justify-center items-center " + props.backgroundColor
+
+    return (
+        <div className={listStyle}>
+            <h3>{props.techName}</h3>
+        </div>
+    )
+}

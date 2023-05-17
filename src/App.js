@@ -6,6 +6,8 @@ import Experience from "./Experience";
 import Contact from "./Contact";
 
 function App() {
+  const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
+  console.log(vw)
   return (
     <div className="w-full bg-white dark:bg-black w-full h-fit">
       <div className="relative w-full h-fit bg-gradient-to-b from-blue-300 dark:from-blue-900">

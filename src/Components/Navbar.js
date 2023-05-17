@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import profilePicture from "../profilePicture.jpeg"
-import Resume from "../Resume-9.pdf"
 import { BsChevronDown, BsChevronUp, BsLinkedin, BsGithub, BsFileText, BsEnvelope } from "react-icons/bs";
+import { NavbarButton } from "./Buttons";
 
 function NavBar(props) {
     const [menuOpen, setMenuOpen] = useState(false);
@@ -11,15 +11,8 @@ function NavBar(props) {
 
         return (
             <div className={className}>
-                {navBarItemList.map((item, id) => (
-                    <div className="flex dark:text-white text-black rounded-lg relative bg-transparent hover:bg-slate-400/50 dark:hover:bg-white/20 hover:text-lg items-center justify-start" key={id}>
-                        <a className="inline-flex w-full h-full" href = {item.name == "Resume" ? Resume : item.link}>
-                            <div className="flex transform transition duration-500 hover:scale-105 p-2 gap-8 md:gap-3 flex justify-center items-center">
-                                <h1 className="text-3xl">{item.icon}</h1>
-                                <h1 className="text-2xl">{item.name}</h1>
-                            </div>
-                        </a>
-                    </div>
+                {navBarItemList.map((navItem, id) => (
+                    <NavbarButton item={navItem} key={id}></NavbarButton>
                 ))}
             </div>
         )
@@ -63,11 +56,11 @@ function NavBar(props) {
 
           </div>
 
-          <div className="hidden md:flex">
+          <div className="hidden ontolg:flex">
             {renderItems("flex-row")}
           </div>
 
-            <div className="flex md:hidden text-5xl relative gap-6 flex-row align-middle justify-start">
+            <div className="flex ontolg:hidden text-5xl relative gap-6 flex-row align-middle justify-start">
                 <button className="text-5xl" onClick={event =>handleMenu()}>
                     {menuOpen ? <BsChevronUp/> : <BsChevronDown/>}
                 </button>
