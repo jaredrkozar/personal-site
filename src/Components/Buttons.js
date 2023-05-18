@@ -16,9 +16,9 @@ export function NavbarButton(props) {
 
 export function GithubAppButton(props) {
     return (
-        <div className="transform transition duration-500 p-2 flex items-center justify-center rounded-lg border-2 dark:border-white hover:bg-white group" key={props.key}>
+        <div className="transform transition duration-500 p-2 flex items-center justify-center rounded-lg border-2 dark:border-white hover:bg-white group " key={props.key}>
             <a className="h-full w-full" href = {props.link}>
-                <div className="group-hover:mix-blend-difference">
+                <div className="dark:group-hover:mix-blend-difference">
                     <h1 className="group"><BsGithub size={44}/></h1>
                 </div>
             </a>

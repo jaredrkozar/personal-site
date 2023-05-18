@@ -9,8 +9,8 @@ function App() {
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
   console.log(vw)
   return (
-    <div className="w-full bg-white dark:bg-black w-full h-fit">
-      <div className="relative w-full h-fit bg-gradient-to-b from-blue-300 dark:from-blue-900">
+    <div className="w-full overflow-x-none bg-white dark:bg-black w-full h-fit">
+      <div className="relative w-fit h-full bg-gradient-to-b from-blue-300 dark:from-blue-900">
           <div className="flex flex-col fixed w-full bg-inherit z-10">
             <NavBar/>
           </div>

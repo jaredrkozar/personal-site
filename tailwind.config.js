@@ -39,7 +39,7 @@ module.exports = {
       }
     },
     gridTemplateColumns: {
-      'apps': 'repeat(auto-fill, minmax(24rem, 1fr))',
+      'apps': 'repeat(auto-fill, minmax(30rem, 1fr))',
     }
   },
 

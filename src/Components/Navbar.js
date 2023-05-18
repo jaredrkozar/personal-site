@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import profilePicture from "../profilePicture.jpeg"
+import profilePicture from "../profilePicture.jpg"
 import { BsChevronDown, BsChevronUp, BsLinkedin, BsGithub, BsFileText, BsEnvelope } from "react-icons/bs";
 import { NavbarButton } from "./Buttons";
 

@@ -21,7 +21,7 @@ export function TechListSmall(props) {
 
     return (
         <div className={listStyle}>
-            <h3>{props.techName}</h3>
+            <h3 className="text-white">{props.techName}</h3>
         </div>
     )
 }
