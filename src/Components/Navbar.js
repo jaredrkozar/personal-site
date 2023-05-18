@@ -67,7 +67,7 @@ function NavBar(props) {
             </div>
         </div>
 
-        <div className="flex md:hidden">
+        <div className="flex ontolg:hidden">
             {menuOpen ? renderItems("flex-col") : null}
           </div>
 
