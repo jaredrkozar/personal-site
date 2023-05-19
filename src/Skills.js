@@ -66,10 +66,10 @@ function Skills() {
             <div className="relative mr-10 md:mr-20 flex flex-col">
             <HeaderTextStyle title="Skills" bgStyle="bg-green-600 dark:bg-green-600" description="Below are some of the languages, libraries and tools I work with:"></HeaderTextStyle>
 
-            <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/40 dark:bg-green-500/25" textStyles="text-green-700 dark:text-green-500"/>
-            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-500/30" textStyles="text-red-800 dark:text-red-400"/>
-            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-500/25" textStyles="text-blue-800 dark:text-blue-500"/>
-            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-600/30 dark:bg-yellow-500/25" textStyles="text-yellow-600 dark:text-yellow-500"/>
+            <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/40 dark:bg-green-500/20" textStyles="text-green-700 dark:text-green-500"/>
+            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-500/25" textStyles="text-red-800 dark:text-red-400"/>
+            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-500/20" textStyles="text-blue-800 dark:text-blue-500"/>
+            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-600/30 dark:bg-yellow-500/20" textStyles="text-yellow-600 dark:text-yellow-500"/>
             </div>
         </div>
      </div>

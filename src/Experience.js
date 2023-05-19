@@ -44,11 +44,11 @@ function Experience() {
         <div className="group" key={job.positionName}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-800 dark:bg-blue-500 last:bg-black rounded-full -left-4 ring-4 ring-blue-800 dark:ring-blue-500 group-first:dark:ring-white group-first:ring-blue-400"></span>
             <div className="mb-10 ml-10 bg-slate-300 dark:bg-slate-700 first:bg-white p-4 rounded-lg w-fit md:w-8/12 dark:text-white text-black ">
-                <h1 className="font-bold dark:text-white text-2xl">{job.positionName}</h1>
-                <h1 className="font-semibold italic text-xl">{job.companyName}</h1>
-                <h1 className="text-xl">{job.startDate + "-" + job.endDate}</h1>
+                <h1 className="font-semibold dark:text-white md:text-3xl text-2xl">{job.positionName}</h1>
+                <h1 className="font-medium italic md:text-3xl text-2xl">{job.companyName}</h1>
+                <h1 className="md:text-3xl text-2xl">{job.startDate + "-" + job.endDate}</h1>
                 {job.responsibilities.map((responsibility, id) =>
-                    <li className="list-inside list-disc text-xl" key={id}>{responsibility}</li>
+                    <li className="list-inside list-disc md:text-2xl text-xl" key={id}>{responsibility}</li>
                 )}
             </div>
             </div>

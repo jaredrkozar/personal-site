@@ -36,10 +36,13 @@ module.exports = {
       screens: {
         'md': '820px',
         'ontolg': '860px',
-      }
+      },
+      fontSize: {
+        xl: ['1.375rem', '1.87rem'],
+      },
     },
     gridTemplateColumns: {
-      'apps': 'repeat(auto-fill, minmax(30rem, 1fr))',
+      'apps': 'repeat(auto-fill, minmax(27rem, 1fr))',
     }
   },
 
