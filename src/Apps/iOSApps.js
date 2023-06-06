@@ -12,20 +12,22 @@ function IOSApps() {
          {
             name: "VisionText",
             language: 'Swift',
-            description: 'Import an image by scanning a document, taking a picture, via the Files app, and more. You can then read the text on the picture aloud, and adjust its speed, pitch and volume.',
+            description: 'Import an image by scanning a document, from your photo library, and more. You can then read the text on the picture aloud, and adjust its speed, pitch and volume.',
             icon: VisionTextIcon,
             darkScreenshots: VisionTextDarkScreenshots,
             lightScreenshots: VisionTextLightScreenshots,
             githubLink: "https://github.com/jaredrkozar/VisionText",
+            technologies: ["VisionKit", "Diffable Tables", "Core Data", "Mac Catalyst", "AVFoundation"]
         },
         {
             name: "imageResizer",
             language: 'Swift',
-            description: 'Easily resize any image on your iPad or Mac. Keep images the same aspect ratio or resize them to any dimension, and share the resized images with other people.',
+            description: 'Easily resize any image on your iPad or Mac. Keep resized images in the same aspect ratio as the original image or resize them to any dimension, and share the resized images with other people.',
             icon: imageResizerIcon,
             darkScreenshots: ImageResizerDarkScreenshots,
             lightScreenshots: ImageResizerLightScreenshots,
             githubLink: "https://github.com/jaredrkozar/imageResizer",
+            technologies: ["Diffable Tables", "Core Data", "Mac Catalyst", "AVFoundation"]
         }
      ]
 

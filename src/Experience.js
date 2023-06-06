@@ -17,7 +17,7 @@ function Experience() {
             positionName: "Computer Science Peer Tutor",
             companyName: "University of Hartford",
             startDate: "October 2022",
-            endDate: "Present",
+            endDate: "May 2023",
             responsibilities: [
                 "Chosen by the head of CS department to tutor 5 students per week in topics; web development, Java, and data structures",
                 "Reviews course material and helps students develop homework and test-taking strategies" 
