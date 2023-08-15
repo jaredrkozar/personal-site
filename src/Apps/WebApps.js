@@ -7,10 +7,10 @@ import StreamConnectDark from "../images/screenshots/StreamConnectDark.png"
 
 function WebApps() {
     const colors = {
-        fullBackground: "bg-emerald-600 dark:bg-emerald-700",
-        opaqueBackground: "bg-emerald-600/30  dark:bg-emerald-700/40",
-        imageBackground: "border-emerald-600 text-emerald-600 dark:border-emerald-200 dark:text-emerald-200 hover:bg-emerald-600 hover:text-emerald-200 dark:hover:text-emerald-800 dark:hover:bg-emerald-200",
-        fullText: "text-emerald-600 dark:text-emerald-300"
+        fullBackground: "bg-emerald-700 dark:bg-emerald-700",
+        opaqueBackground: "bg-emerald-700/30  dark:bg-emerald-700/40",
+        imageBackground: "border-emerald-700 text-emerald-700 dark:border-emerald-200 dark:text-emerald-200 hover:bg-emerald-700 hover:text-emerald-200 dark:hover:text-emerald-700 dark:hover:bg-emerald-200",
+        fullText: "text-emerald-700 dark:text-emerald-300"
     }
 
     const webAppsItemList = [

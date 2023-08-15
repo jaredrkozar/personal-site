@@ -15,12 +15,12 @@ export function NavbarButton(props) {
 }
 
 export function GithubAppButton(props) {
-    var hoverState = "transform transition duration-500 p-2 flex items-center justify-center rounded-xl border-2 group-hover: " + props.color
+    var hoverState = "transform transition duration-500 p-1 md:p-2 flex items-center justify-center rounded-xl border-2 group-hover: " + props.color
     return (
         <div className={hoverState} key={props.key}>
             <a className="h-full w-full" href = {props.link}>
                 <div className="dark:group-hover:mix-blend-difference">
-                    <h1 className="group"><BsGithub size={44}/></h1>
+                    <h1 className="text-5xl md:text-6xl group"><BsGithub/></h1>
                 </div>
             </a>
         </div>
