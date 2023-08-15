@@ -7,7 +7,7 @@ export function Card(props) {
 
     return (
         <div className={classstr}>
-            <div className="flex flex-row align-center relative space-x-16 md:space-x-24">
+            <div className="flex flex-row align-center relative space-x-20 md:space-x-24">
                 {props.currentApp.icon ? <img class="object-cover h-16 w-16 md:h-20 md:w-20 absolute rounded-xl" src={props.currentApp.icon} alt="icon"></img> : null}
             
                 <div className="flex flex-col relative space-y-2 w-full">
