@@ -1,21 +1,25 @@
 {
   "files": {
-    "main.css": "/static/css/main.789c110f.css",
-    "main.js": "/static/js/main.91a9e75c.js",
+    "main.css": "/static/css/main.7d16ba49.css",
+    "main.js": "/static/js/main.805cd86d.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/VisionTextLightCombo.png": "/static/media/VisionTextLightCombo.fc20773072a2daa5aff6.png",
     "static/media/ImageResizerDarkCombo.png": "/static/media/ImageResizerDarkCombo.63e5704eeff971ab25d7.png",
     "static/media/ImageResizerLightCombo.png": "/static/media/ImageResizerLightCombo.60969320e5e4cd090309.png",
     "static/media/VisionTextDarkCombo.png": "/static/media/VisionTextDarkCombo.d66f2d64bb116ab48447.png",
     "static/media/Resume-5.pdf": "/static/media/Resume-5.8a9d24bc080cc4bbb63b.pdf",
+    "static/media/StreamConnectLight.png": "/static/media/StreamConnectLight.463aa317783f4a7e9e65.png",
+    "static/media/NotesAppDark.png": "/static/media/NotesAppDark.f98ec017f655eea6d377.png",
+    "static/media/NotesAppLight.png": "/static/media/NotesAppLight.c3d4433f342bfff2de11.png",
+    "static/media/StreamConnectDark.png": "/static/media/StreamConnectDark.6d924e6b8cd1d35437e7.png",
     "static/media/profilePicture.jpg": "/static/media/profilePicture.8b5a602dd7a9b4f8b613.jpg",
     "index.html": "/index.html",
-    "main.789c110f.css.map": "/static/css/main.789c110f.css.map",
-    "main.91a9e75c.js.map": "/static/js/main.91a9e75c.js.map",
+    "main.7d16ba49.css.map": "/static/css/main.7d16ba49.css.map",
+    "main.805cd86d.js.map": "/static/js/main.805cd86d.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.789c110f.css",
-    "static/js/main.91a9e75c.js"
+    "static/css/main.7d16ba49.css",
+    "static/js/main.805cd86d.js"
   ]
 }
