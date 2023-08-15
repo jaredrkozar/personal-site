@@ -1,13 +1,14 @@
 import NavBar from "./components/Navbar";
 import AboutMe from "./AboutMe";
 import IOSApps from "./apps/iOSApps";
+import WebApps from "./apps/WebApps";
 import Skills from "./Skills";
 import Experience from "./Experience";
 import Contact from "./Contact";
 
 function App() {
   const vw = Math.max(document.documentElement.clientWidth || 0, window.innerWidth || 0)
-  console.log(vw)
+
   return (
     <div className="w-full overflow-x-none bg-white dark:bg-black w-full h-fit">
       <div className="relative w-fit h-full bg-gradient-to-b from-blue-300 dark:from-blue-900">
@@ -19,6 +20,7 @@ function App() {
       <div className="ml-5 relative mr-5 space-y-10 py-20">
       <Skills/>
       <Experience/>
+      <WebApps/>
       <IOSApps/>
       <Contact/>
       </div>

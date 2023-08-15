@@ -8,6 +8,13 @@ import ImageResizerDarkScreenshots from "../images/screenshots/ImageResizerDarkC
 import ImageResizerLightScreenshots from "../images/screenshots/ImageResizerLightCombo.png"
 
 function IOSApps() {
+    const colors = {
+        fullBackground: "bg-orange-600 dark:bg-orange-500",
+        opaqueBackground: "bg-orange-500/40 dark:bg-orange-600/40",
+        imageBackground: "border-orange-600 text-orange-600 dark:border-orange-200 dark:text-orange-200 hover:bg-orange-600 hover:text-orange-200 dark:hover:text-orange-800 dark:hover:bg-orange-200",
+        fullText: "text-orange-600 dark:text-orange-300"
+    }
+
     const iOSAppsItemList = [
          {
             name: "VisionText",
@@ -38,7 +45,7 @@ function IOSApps() {
                 <div className="w-full relative grid md:grid-cols-apps gap-6">
                 {
                     iOSAppsItemList.map((app) =>
-                        <Card currentApp={app} backgroundColor="bg-orange-500/40 dark:bg-orange-500/40" originalColor="bg-orange-600 dark:bg-orange-500" key={app.name}></Card>
+                        <Card currentApp={app} colors={colors} key={app.name}></Card>
                     )
                 }
                 </div>

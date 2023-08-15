@@ -17,11 +17,13 @@ export function TechList(props) {
 }
 
 export function TechListSmall(props) {
-    const listStyle = "md:text-2xl text-xl space-x-3 rounded-md relative h-fit w-fit px-2 flex flex-row justify-center items-center " + props.backgroundColor
+    var classNames = "md:text-3xl text-2xl font-medium font-bold " + props.colorStyles
+    const commaSep = props.array.join(', ');
 
     return (
-        <div className={listStyle}>
-            <h3 className="text-white">{props.techName}</h3>
+        <div className="pt-4 relative">
+            <h1 className={classNames}>{props.title}</h1>
+            <h1 className="text-xl italic">{commaSep}</h1>
         </div>
     )
 }
