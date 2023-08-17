@@ -15,8 +15,8 @@ export function Card(props) {
                     <h1 className={"flex-none w-fit text-center md:text-2xl text-lg border-solid p-1 md:p-1.5 rounded-lg font-semibold text-white " + props.colors.fullBackground}>{props.currentApp.language}</h1>
                 </div>
             </div>
-            <img class="pb-4 pt-4 h-80 w-100 object-contain relative rounded-md block dark:hidden" src={props.currentApp.lightScreenshots} alt="app screenshot"></img>
-            <img class="pb-4 pt-4 h-80 w-100 object-contain relative rounded-md hidden dark:block" src={props.currentApp.darkScreenshots} alt="app screenshot"></img>
+            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md block dark:hidden" src={props.currentApp.lightScreenshots} alt="app screenshot"></img>
+            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md hidden dark:block" src={props.currentApp.darkScreenshots} alt="app screenshot"></img>
 
             <h1 className="md:text-2xl text-xl w-full">{props.currentApp.description}</h1>
 
