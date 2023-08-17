@@ -37,7 +37,9 @@ function Experience() {
 
        return (
         <div className="relative">
-            <HeaderTextStyle title="Experience" bgStyle="bg-blue-600 dark:bg-blue-500" description="Here are some of the companies I have worked at in the past: "></HeaderTextStyle>
+            <HeaderTextStyle title="Experience" bgStyle="bg-blue-600 dark:bg-blue-500">
+                <h1 className="md:text-3xl text-2xl font-regular text-black dark:text-white">Here are some of the companies I have worked at in the past: </h1>
+            </HeaderTextStyle>
 
             <ol className="relative top-6 border-l-8 rounded-lg border-gray-200 border-blue-600 dark:border-blue-400">                  
     {experienceList.map((job) =>

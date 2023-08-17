@@ -7,7 +7,7 @@ import StreamConnectDark from "../images/screenshots/StreamConnectDark.png"
 
 function WebApps() {
     const colors = {
-        fullBackground: "bg-emerald-700 dark:bg-emerald-700",
+        fullBackground: "bg-emerald-600 dark:bg-emerald-700",
         opaqueBackground: "bg-emerald-700/30  dark:bg-emerald-700/40",
         imageBackground: "border-emerald-700 text-emerald-700 dark:border-emerald-200 dark:text-emerald-200 hover:bg-emerald-700 hover:text-emerald-200 dark:hover:text-emerald-700 dark:hover:bg-emerald-200",
         fullText: "text-emerald-700 dark:text-emerald-300 font-bold"
@@ -36,7 +36,9 @@ function WebApps() {
 
     return (
         <div className="">
-            <HeaderTextStyle title="Web Apps" bgStyle={colors.fullBackground} description="Here are some of the web applications I have worked on" languages="React.js, Express.js, Node.js, HTML, CSS, and JavaScript" languageColors={colors.fullText}></HeaderTextStyle>
+            <HeaderTextStyle title="Web Apps" bgStyle={colors.fullBackground}>
+            <h3 className="md:text-3xl text-2xl font-medium text-black dark:text-white">Here are some of the web applications I have worked on <span className={colors.fullText}>React.js, Express.js, Node.js, HTML, CSS, and JavaScript</span>:</h3>
+            </HeaderTextStyle>
             <div className="relative top-6 w-full">
                 <div className="w-full relative grid md:grid-cols-apps gap-6">
                 {
