@@ -11,7 +11,7 @@ export function Card(props) {
                 {props.currentApp.icon ? <img class="object-cover h-16 w-16 md:h-20 md:w-20 absolute rounded-xl" src={props.currentApp.icon} alt="icon"></img> : null}
             
                 <div className="flex flex-col relative space-y-1 w-full bottom-1.5">
-                    <h1 className={"md:text-4xl text-2xl font-bold " + props.colors.fullText}>{props.currentApp.name}</h1>
+                    <h1 className={"md:text-4xl text-2xl" + props.colors.fullText}>{props.currentApp.name}</h1>
                     <h1 className={"flex-none w-fit text-center md:text-2xl text-lg border-solid p-1 md:p-1.5 rounded-lg font-semibold text-white " + props.colors.fullBackground}>{props.currentApp.language}</h1>
                 </div>
             </div>

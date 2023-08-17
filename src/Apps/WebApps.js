@@ -10,7 +10,7 @@ function WebApps() {
         fullBackground: "bg-emerald-700 dark:bg-emerald-700",
         opaqueBackground: "bg-emerald-700/30  dark:bg-emerald-700/40",
         imageBackground: "border-emerald-700 text-emerald-700 dark:border-emerald-200 dark:text-emerald-200 hover:bg-emerald-700 hover:text-emerald-200 dark:hover:text-emerald-700 dark:hover:bg-emerald-200",
-        fullText: "text-emerald-700 dark:text-emerald-300"
+        fullText: "text-emerald-700 dark:text-emerald-300 font-bold"
     }
 
     const webAppsItemList = [
@@ -36,7 +36,7 @@ function WebApps() {
 
     return (
         <div className="">
-            <HeaderTextStyle title="Web Apps" bgStyle={colors.fullBackground} description="Here are some of the web applications I have worked on using React.js, Express.js, HTML, CSS, and JavaScript:"></HeaderTextStyle>
+            <HeaderTextStyle title="Web Apps" bgStyle={colors.fullBackground} description="Here are some of the web applications I have worked on" languages="React.js, Express.js, Node.js, HTML, CSS, and JavaScript" languageColors={colors.fullText}></HeaderTextStyle>
             <div className="relative top-6 w-full">
                 <div className="w-full relative grid md:grid-cols-apps gap-6">
                 {
