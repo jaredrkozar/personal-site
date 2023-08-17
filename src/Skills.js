@@ -71,7 +71,7 @@ function Skills() {
 
             <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/30 dark:bg-green-500/20" textStyles="text-green-800 dark:text-green-400"/>
             <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-400/25" textStyles="text-red-800 dark:text-red-300"/>
-            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-600/20" textStyles="text-blue-800 dark:text-blue-400"/>
+            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/30 dark:bg-blue-600/20" textStyles="text-blue-800 dark:text-blue-400"/>
             <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-400/50 dark:bg-yellow-600/30" textStyles="text-yellow-700 dark:text-yellow-300"/>
             </div>
         </div>
