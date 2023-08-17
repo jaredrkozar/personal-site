@@ -8,15 +8,15 @@ export function Card(props) {
     return (
         <div className={classstr}>
             <div className="flex flex-row align-center relative space-x-20 md:space-x-24">
-                {props.currentApp.icon ? <img class="object-cover h-16 w-16 md:h-20 md:w-20 absolute rounded-xl" src={props.currentApp.icon} alt="icon"></img> : null}
+                {props.currentApp.icon ? <img class="object-cover h-16 w-16 md:h-20 md:w-20 absolute rounded-xl" src={props.currentApp.icon} alt={props.currentApp.name + " app icon"}></img> : null}
             
                 <div className="flex flex-col relative space-y-1 w-full bottom-1.5">
                     <h1 className={"md:text-4xl text-2xl " + props.colors.fullText}>{props.currentApp.name}</h1>
                     <h1 className={"flex-none w-fit text-center md:text-2xl text-lg border-solid p-1 md:p-1.5 rounded-lg font-semibold text-white " + props.colors.fullBackground}>{props.currentApp.language}</h1>
                 </div>
             </div>
-            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md block dark:hidden" src={props.currentApp.lightScreenshots} alt="app screenshot"></img>
-            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md hidden dark:block" src={props.currentApp.darkScreenshots} alt="app screenshot"></img>
+            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md block dark:hidden" src={props.currentApp.lightScreenshots} alt={"Light mode screenshot for " + props.currentApp.name}></img>
+            <img class="pb-4 pt-4 h-fit w-100 object-contain relative rounded-md hidden dark:block" src={props.currentApp.darkScreenshots} alt={"Dark mode screenshot for " + props.currentApp.name}></img>
 
             <h1 className="md:text-2xl text-xl w-full">{props.currentApp.description}</h1>
 
