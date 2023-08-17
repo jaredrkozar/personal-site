@@ -1,6 +1,6 @@
 import { HeaderTextStyle } from "./components/TextStyles"
 import { TechList } from "./components/TechList"
-import { SiSwift, SiCplusplus, SiPython, SiJavascript, SiHtml5, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiMysql, SiTailwindcss, SiCss3 } from "react-icons/si";
+import { SiSwift, SiCplusplus, SiTypescript, SiPython, SiJavascript, SiHtml5, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiMysql, SiTailwindcss, SiCss3, SiXcode, SiVisualstudiocode } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
 function Skills() {
@@ -31,6 +31,10 @@ function Skills() {
   {
     name: "Tailwind CSS",
     icon: <SiTailwindcss/>,
+  },
+  {
+    name: "TypeScript",
+    icon: <SiTypescript/>,
   },
   {
     name: "HTML",
@@ -65,6 +69,14 @@ function Skills() {
   {
     name: "Git",
     icon: <SiGit/>,
+  },
+  {
+    name: "Xcode",
+    icon: <SiXcode/>,
+  },
+  {
+    name: "Visual Studio Code",
+    icon: <SiVisualstudiocode/>,
   },
   {
     name: "MySQL",
