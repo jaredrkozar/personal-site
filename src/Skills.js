@@ -1,6 +1,6 @@
 import { HeaderTextStyle } from "./components/TextStyles"
 import { TechList } from "./components/TechList"
-import { SiSwift, SiCplusplus, SiJavascript, SiHtml5, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiMysql } from "react-icons/si";
+import { SiSwift, SiCplusplus, SiPython, SiJavascript, SiHtml5, SiReact, SiNodedotjs, SiExpress, SiMongodb, SiGit, SiMysql, SiTailwindcss, SiCss3 } from "react-icons/si";
 import { DiJava } from "react-icons/di";
 
 function Skills() {
@@ -11,19 +11,15 @@ function Skills() {
      },
      {
       name: "Java",
-      icon: <DiJava/>,
-    },
-    {
-      name: "JavaScript",
-      icon: <SiJavascript/>,
-    },
-    {
-        name: "HTML",
-        icon: <SiHtml5/>,
+      icon: <DiJava size={36}/>,
     },
     {
       name: "C++",
       icon: <SiCplusplus/>,
+    },
+    {
+      name: "Python",
+      icon: <SiPython/>,
     }
  ]
 
@@ -31,6 +27,22 @@ function Skills() {
   {
     name: "React.js",
     icon: <SiReact/>,
+  },
+  {
+    name: "Tailwind CSS",
+    icon: <SiTailwindcss/>,
+  },
+  {
+    name: "HTML",
+    icon: <SiHtml5/>,
+  },
+  {
+    name: "CSS",
+    icon: <SiCss3/>,
+  },
+  {
+    name: "JavaScript",
+    icon: <SiJavascript/>,
   }
  ]
 
@@ -70,9 +82,9 @@ function Skills() {
             </HeaderTextStyle>
 
             <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/30 dark:bg-green-500/20" textStyles="text-green-800 dark:text-green-400"/>
-            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-400/25" textStyles="text-red-800 dark:text-red-300"/>
-            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-700/25 dark:bg-blue-600/20" textStyles="text-blue-800 dark:text-blue-300"/>
-            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-400/50 dark:bg-yellow-600/30" textStyles="text-yellow-700 dark:text-yellow-300"/>
+            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-500/25" textStyles="text-red-800 dark:text-red-300"/>
+            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-700/25 dark:bg-blue-500/20" textStyles="text-blue-800 dark:text-blue-300"/>
+            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-400/50 dark:bg-yellow-500/20" textStyles="text-yellow-700 dark:text-yellow-300"/>
             </div>
         </div>
      </div>

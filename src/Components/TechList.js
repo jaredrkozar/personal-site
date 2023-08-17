@@ -3,7 +3,7 @@ export function TechList(props) {
 
     return (
         <div className="pt-4 relative">
-            <h1 className="md:text-3xl text-2xl text-black dark:text-white font-medium">{props.title}</h1>
+            <h1 className="md:text-3xl text-2xl text-black dark:text-white font-semibold">{props.title}</h1>
             <div className="flex flex-row flex-wrap space-y-2 space-x-2 md:space-y-3 md:space-x-3 justify-start space-x-2 items-end">
             {props.array.map((tech) =>
                 <div className={listStyle + ""} key={tech.name}>
