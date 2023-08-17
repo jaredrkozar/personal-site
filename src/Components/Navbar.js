@@ -50,7 +50,7 @@ function NavBar(props) {
           
           <div className="relative gap-3">
               <div className="text-2xl font-bold gap-4 flex rounded-md relative bg-transparent space-x-15 flex items-center">
-              <img className="object-cover h-14 w-14 rounded-full border-white border" src={profilePicture} alt="picture of jared kozar"></img>
+              <img className="object-cover h-14 w-14 rounded-full border-white border" src={profilePicture} alt="Me similing wearing a blue button-down shirt in front of Central Park"></img>
               <h1>Jared Kozar</h1>
               </div>
 
