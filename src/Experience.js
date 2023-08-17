@@ -41,7 +41,7 @@ function Experience() {
                 <h1 className="md:text-3xl text-2xl font-regular text-black dark:text-white">Here are some of the companies I have worked at in the past: </h1>
             </HeaderTextStyle>
 
-            <ol className="relative top-6 border-l-8 rounded-lg border-gray-200 border-blue-600 dark:border-blue-400">                  
+            <div className="relative top-6 border-l-8 rounded-lg border-gray-200 border-blue-600 dark:border-blue-400">                  
     {experienceList.map((job) =>
         <div className="group" key={job.positionName}>
             <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-800 dark:bg-blue-500 last:bg-black rounded-full -left-4 ring-4 ring-blue-800 dark:ring-blue-500 group-first:dark:ring-white group-first:ring-blue-400"></span>
@@ -57,7 +57,7 @@ function Experience() {
             </div>
             </div>
     )}
-</ol>
+</div>
         </div>
        )
 }

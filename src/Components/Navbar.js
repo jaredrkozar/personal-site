@@ -61,7 +61,7 @@ function NavBar(props) {
           </div>
 
             <div className="flex ontolg:hidden text-5xl relative gap-6 flex-row align-middle justify-start">
-                <button className="text-5xl" onClick={event =>handleMenu()}>
+                <button className="text-5xl" onClick={event =>handleMenu()} alt="ways to contact me">
                     {menuOpen ? <BsChevronUp/> : <BsChevronDown/>}
                 </button>
             </div>
