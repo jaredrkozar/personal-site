@@ -7,7 +7,7 @@ export function TechList(props) {
             <div className="flex flex-row flex-wrap space-y-2 space-x-2 md:space-y-3 md:space-x-3 justify-start space-x-2 items-end">
             {props.array.map((tech) =>
                 <div className={listStyle + ""} key={tech.name}>
-                    <h3 className={props.textStyles + " text-4xl"}>{tech.icon}</h3>
+                    <h1 className={props.textStyles + " text-4xl"}>{tech.icon}</h1>
                     <h1 className={"md:text-2xl text-xl font-medium space-x-12 " + props.textStyles}>{tech.name}</h1>
                 </div>
             )}

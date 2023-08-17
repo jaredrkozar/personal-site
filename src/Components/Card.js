@@ -22,7 +22,7 @@ export function Card(props) {
 
             <TechListSmall title="Technologies Used:" array={props.currentApp.technologies}></TechListSmall>
             <div className="absolute top-4 right-4">
-                    <GithubAppButton link={props.currentApp.githubLink} color={props.colors.imageBackground} alt="acess github link"></GithubAppButton>
+                    <GithubAppButton link={props.currentApp.githubLink} color={props.colors.imageBackground} alt={"Github link for " + props.currentApp.name}></GithubAppButton>
                 </div>
         </div>
     )
