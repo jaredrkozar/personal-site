@@ -69,10 +69,10 @@ function Skills() {
             <h1 className="md:text-3xl text-2xl font-regular text-black dark:text-white">Below are some of the languages, libraries and tools I work with:</h1>
             </HeaderTextStyle>
 
-            <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/40 dark:bg-green-500/20" textStyles="text-green-700 dark:text-green-500"/>
-            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-500/25" textStyles="text-red-800 dark:text-red-400"/>
-            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-500/20" textStyles="text-blue-800 dark:text-blue-500"/>
-            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-600/30 dark:bg-yellow-500/20" textStyles="text-yellow-600 dark:text-yellow-500"/>
+            <TechList title="Languages" array={languagesList} colorStyles="bg-green-600/30 dark:bg-green-500/20" textStyles="text-green-800 dark:text-green-400"/>
+            <TechList title="Frontend" array={frontEndList} colorStyles="bg-red-600/30 dark:bg-red-400/25" textStyles="text-red-800 dark:text-red-300"/>
+            <TechList title="Backend" array={backEndList} colorStyles="bg-blue-600/40 dark:bg-blue-600/20" textStyles="text-blue-800 dark:text-blue-400"/>
+            <TechList title="Tools" array={toolsList} colorStyles="bg-yellow-400/50 dark:bg-yellow-600/30" textStyles="text-yellow-700 dark:text-yellow-300"/>
             </div>
         </div>
      </div>
