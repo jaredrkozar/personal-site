@@ -21,7 +21,7 @@ function WebApps() {
             darkScreenshots: NotesAppDarkScreenshots,
             lightScreenshots: NotesAppLightScreenshots,
             githubLink: "https://github.com/jaredrkozar/notes-App",
-            technologies: ["SQL", "Express", "Node.js"]
+            technologies: ["SQL", "Express.js", "Node.js"]
         },
         {
             name: "StreamConnect",
@@ -30,14 +30,14 @@ function WebApps() {
             darkScreenshots: StreamConnectDark,
             lightScreenshots: StreamConnectLight,
             githubLink: "https://github.com/jaredrkozar/streamConnectViz/tree/jared",
-            technologies: ["React Redux, Express, Node.js"]
+            technologies: ["React Redux, Express.js, Node.js"]
         }
      ]
 
     return (
         <div className="">
             <HeaderTextStyle title="Web Apps" bgStyle={colors.fullBackground}>
-            <h3 className="md:text-3xl text-2xl font-medium text-black dark:text-white">Here are some of the web applications I have worked on <span className={colors.fullText}>React.js, Express.js, Node.js, HTML, CSS, and JavaScript</span>:</h3>
+            <h3 className="md:text-3xl text-2xl font-medium text-black dark:text-white">Here are some of the web applications I have worked on using <span className={colors.fullText}>React.js, Express.js, Node.js, HTML, CSS, and JavaScript</span>:</h3>
             </HeaderTextStyle>
             <div className="relative top-6 w-full">
                 <div className="w-full relative grid md:grid-cols-apps gap-6">
