@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/static/css/main.37968d39.css",
-    "main.js": "/static/js/main.8c6383d0.js",
+    "main.js": "/static/js/main.3daaee1d.js",
     "static/js/787.5809834d.chunk.js": "/static/js/787.5809834d.chunk.js",
     "static/media/VisionTextLightCombo.png": "/static/media/VisionTextLightCombo.fc20773072a2daa5aff6.png",
     "static/media/ImageResizerDarkCombo.png": "/static/media/ImageResizerDarkCombo.63e5704eeff971ab25d7.png",
     "static/media/ImageResizerLightCombo.png": "/static/media/ImageResizerLightCombo.60969320e5e4cd090309.png",
     "static/media/VisionTextDarkCombo.png": "/static/media/VisionTextDarkCombo.d66f2d64bb116ab48447.png",
-    "static/media/Resume-5.pdf": "/static/media/Resume-5.8a9d24bc080cc4bbb63b.pdf",
+    "static/media/Resume.pdf": "/static/media/Resume.8f5697a9d759951a54f5.pdf",
     "static/media/StreamConnectLight.png": "/static/media/StreamConnectLight.2b53e5596ca77f6ba422.png",
     "static/media/NotesAppLight.png": "/static/media/NotesAppLight.f142104d1a88e07a40af.png",
     "static/media/NotesAppDark.png": "/static/media/NotesAppDark.f8a39d0f85a2297dfe06.png",
@@ -15,11 +15,11 @@
     "static/media/profilePicture.jpg": "/static/media/profilePicture.8b5a602dd7a9b4f8b613.jpg",
     "index.html": "/index.html",
     "main.37968d39.css.map": "/static/css/main.37968d39.css.map",
-    "main.8c6383d0.js.map": "/static/js/main.8c6383d0.js.map",
+    "main.3daaee1d.js.map": "/static/js/main.3daaee1d.js.map",
     "787.5809834d.chunk.js.map": "/static/js/787.5809834d.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.37968d39.css",
-    "static/js/main.8c6383d0.js"
+    "static/js/main.3daaee1d.js"
   ]
 }
