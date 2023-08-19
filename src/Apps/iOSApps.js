@@ -9,10 +9,10 @@ import ImageResizerLightScreenshots from "../images/screenshots/ImageResizerLigh
 
 function IOSApps() {
     const colors = {
-        fullBackground: "bg-orange-600 dark:bg-orange-600",
+        fullBackground: "bg-orange-600 dark:bg-orange-500",
         opaqueBackground: "bg-orange-300/40 dark:bg-orange-600/30",
         imageBackground: "border-orange-600 text-orange-600 dark:border-orange-200 dark:text-orange-200 hover:bg-orange-600 hover:text-orange-100 dark:hover:text-orange-800 dark:hover:bg-orange-200",
-        fullText: "text-orange-600 dark:text-orange-300 font-bold"
+        fullText: "text-orange-600 dark:text-orange-200 font-bold"
     }
 
     const iOSAppsItemList = [

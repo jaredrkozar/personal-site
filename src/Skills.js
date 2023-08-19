@@ -89,7 +89,7 @@ function Skills() {
         <div className="relative flex flex-row">
             <div className="relative mr-10 md:mr-20 flex flex-col">
 
-            <HeaderTextStyle title="Skills" bgStyle="bg-green-600 dark:bg-green-600">
+            <HeaderTextStyle title="Skills" bgStyle="bg-green-800 dark:bg-green-700">
             <h1 className="md:text-3xl text-2xl font-regular text-black dark:text-white">Below are some of the languages, libraries and tools I work with:</h1>
             </HeaderTextStyle>
 

@@ -37,14 +37,14 @@ function Experience() {
 
        return (
         <div className="relative">
-            <HeaderTextStyle title="Experience" bgStyle="bg-blue-600 dark:bg-blue-500">
+            <HeaderTextStyle title="Experience" bgStyle="bg-orient-800 dark:bg-orient-700">
                 <h1 className="md:text-3xl text-2xl font-regular text-black dark:text-white">Here are some of the companies I have worked at in the past: </h1>
             </HeaderTextStyle>
 
-            <div className="relative top-6 border-l-8 rounded-lg border-gray-200 border-blue-600 dark:border-blue-400">                  
+            <div className="relative top-6 border-l-8 rounded-lg border-orient-600 dark:border-orient-700">                  
     {experienceList.map((job) =>
         <div className="group" key={job.positionName}>
-            <span className="absolute flex items-center justify-center w-6 h-6 bg-blue-800 dark:bg-blue-500 last:bg-black rounded-full -left-4 ring-4 ring-blue-800 dark:ring-blue-500 group-first:dark:ring-white group-first:ring-blue-400"></span>
+            <span className="absolute flex items-center justify-center w-6 h-6 bg-orient-700 dark:bg-orient-800 group-first:bg-orient-700 last:bg-black rounded-full -left-4 ring-4 ring-orient-700 dark:ring-orient-800 group-first:dark:ring-white group-first:ring-orient-500"></span>
             <div className="mb-10 ml-10 bg-slate-300 dark:bg-slate-700 first:bg-white p-4 rounded-lg w-fit md:w-8/12 dark:text-white text-black ">
                 <h1 className="font-semibold dark:text-white md:text-3xl text-2xl">{job.positionName}</h1>
                 <h1 className="font-medium italic md:text-3xl text-2xl">{job.companyName}</h1>

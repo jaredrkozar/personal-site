@@ -7,7 +7,7 @@ import StreamConnectDark from "../images/screenshots/StreamConnectDark.png"
 
 function WebApps() {
     const colors = {
-        fullBackground: "bg-emerald-600 dark:bg-emerald-700",
+        fullBackground: "bg-emerald-700 dark:bg-emerald-600",
         opaqueBackground: "bg-emerald-400/40  dark:bg-emerald-700/40",
         imageBackground: "border-emerald-700 text-emerald-700 dark:border-emerald-200 dark:text-emerald-200 hover:bg-emerald-700 hover:text-emerald-200 dark:hover:text-emerald-900 dark:hover:bg-emerald-200",
         fullText: "text-emerald-700 dark:text-emerald-300 font-bold"
