@@ -1,4 +1,4 @@
-import Resume from "../images/Resume-5.pdf"
+import Resume from "../images/Resume.pdf"
 import { BsGithub } from "react-icons/bs";
 
 export function NavbarButton(props) {
