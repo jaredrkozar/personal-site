@@ -2,11 +2,8 @@ import { TechListSmall } from "./TechList";
 import { GithubAppButton } from "./Buttons";
 
 export function Card(props) {
-    
-    let classstr = "content-center relative p-4 h-fit w-fit " + props.colors.opaqueBackground + " rounded-2xl flex flex-col dark:text-white text-black";
-
     return (
-        <div className={classstr}>
+        <div className={"content-center relative p-4 h-fit w-fit " + props.colors.opaqueBackground + " rounded-2xl flex flex-col dark:text-white text-black"}>
             <div className="flex flex-row align-center relative space-x-20 md:space-x-24">
                 {props.currentApp.icon ? <img class="object-cover h-16 w-16 md:h-20 md:w-20 absolute rounded-xl" src={props.currentApp.icon} alt={props.currentApp.name + " app icon"}></img> : null}
             
